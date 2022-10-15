@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: wheat;
+}
+
+.slider-container{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.image-container{
+    display: flex;
+}
+
+.btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.btn.prev{
+    left: 10px;
+}
+
+.btn.prev:hover{
+    opacity: 1;
+}
+
+.btn.next{
+    right: 10px;
+}
+
+.btn.next:hover{
+    opacity: 1;
+}
